@@ -1,0 +1,11 @@
+{
+  "custom/vpn": {
+    "return-type": "json",
+    "interval": 5,
+    "signal": 10,
+    "tooltip": false,
+    "on-click": "~/.config/scripts/vpnmenu.sh",
+    "format": "<span rise='1400'> </span>"
+  }
+}
+

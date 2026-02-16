@@ -1,0 +1,7 @@
+{
+  "memory": {
+    "format": "<span rise = '1200' size = '11000'>{icon}</span>{percentage}",
+    "format-icons": "󰘚 "
+  }
+}
+

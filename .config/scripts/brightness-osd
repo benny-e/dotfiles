@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+case "${1:-}" in
+  up)   brightnessctl set +5% >/dev/null ;;
+  down) brightnessctl set 5%- >/dev/null ;;
+  *)    exit 0 ;;
+esac
+
+
+CUR="$(brightnessctl get)"
+MAX="$(brightnessctl max)"
+PCT=$(( CUR * 100 / MAX ))
+
+
+# Icon by brightness level
+if   (( PCT <= 33 )); then ICON="󰃞"
+elif (( PCT <= 66 )); then ICON="󰃟"
+else                      ICON="󰃠"
+fi
+
+BODY="<span font='JetBrains Mono Font 20'>${ICON}</span>"
+
+notify-send \
+  -a "osd" \
+  -u low \
+  -h "int:value:${PCT}" \
+  -h "string:x-canonical-private-synchronous:osd" \
+  -h "string:category:osd.brightness" \
+  " " \
+  "${BODY}"
+

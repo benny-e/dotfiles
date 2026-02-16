@@ -1,0 +1,8 @@
+
+{
+"custom/clipboard": {
+  "format": "<span rise='2000'> </span>",
+  "tooltip": "Clipboard history",
+  "on-click": "~/.config/scripts/clipboard.sh"
+}
+}

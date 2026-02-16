@@ -1,0 +1,113 @@
+
+
+configuration {
+  show-icons: false;
+  sidebar-mode: false;
+}
+
+* {
+  font: "JetBrainsMono Nerd Font 12";
+  text-color: #FFFFFF;
+
+  bg:       #0f1115;
+  bg-alt:   #151922;
+  panel:    #12161e;
+  text:     #e7e7e7;
+  text-dim: #b7bcc6;
+
+  accent:   #1793d1; 
+  border:   #2a3140;
+
+
+}
+
+window {
+  location: north;
+  anchor: north;
+
+  x-offset: 0px;
+  y-offset: 0px;
+
+  width: 600px;
+
+  background-color: rgba(24, 24, 24, 0.96);
+
+  border: 2px;
+  border-color: @accent;
+  border-radius: 2px;
+}
+
+mainbox {
+  padding: 10px;
+  spacing: 8px;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+inputbar {
+  children: [ prompt, entry ];
+  padding: 6px;
+  background-color: @bg-alt;
+  border-radius: 2px;
+}
+
+prompt {
+  enabled: true;
+  text-color: @text-dim;
+  background-color: transparent;
+}
+
+entry {
+  background-color: transparent;
+  text-color: #FFFFFF;
+  placeholder: "Search…";
+  placeholder-color: rgba(255, 255, 255, 0.65);
+}
+
+message {
+  padding: 8px;
+  background-color: rgba(28, 20, 14, 0.92);
+  text-color: rgba(255, 255, 255, 0.75);
+  border-radius: 2px;
+}
+
+listview {
+  lines: 12;
+  fixed-height: true;
+  spacing: 6px;
+  scrollbar: false;
+
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+element {
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+}
+
+element selected {
+  background-color: #1a2030;
+  border-radius: 2px;
+  border: 2px;
+  border-color: @accent;
+}
+
+scrollbar {
+  width: 6px;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+scrollbar handle {
+  background-color: rgba(255, 122, 0, 0.55);
+  border-radius: 2px;
+}
+
+

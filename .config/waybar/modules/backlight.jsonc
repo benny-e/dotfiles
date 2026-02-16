@@ -1,0 +1,8 @@
+{
+  "backlight": {
+    "format": "<span rise='2000'>{icon}</span>   {percent}",
+    "format-icons": ["󰃞", "󰃠"],
+    "tooltip": false
+  }
+}
+

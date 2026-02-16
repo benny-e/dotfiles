@@ -1,0 +1,13 @@
+{
+  "network": {
+    "format-wifi": "<span rise='1300'>{icon}</span> {signalStrength}",
+    "format-ethernet": "<span rise ='2000'></span>",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "󰖪 ",
+    //"format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click": "~/.config/scripts/networkmenu.sh",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip": false
+  }
+}
+

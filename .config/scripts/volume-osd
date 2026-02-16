@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+   
+MAX="${MAX:-100}"     
+
+case "${1:-}" in
+  up)   pactl set-sink-volume @DEFAULT_SINK@ +"5%";;
+  down) pactl set-sink-volume @DEFAULT_SINK@ -"5%";;
+  mute) pactl set-sink-mute   @DEFAULT_SINK@ toggle;;
+  show|"") : ;; 
+  *) echo "Usage: $0 {up|down|mute|show}"; exit 2;;
+esac
+
+VOL="$(
+  pactl get-sink-volume @DEFAULT_SINK@ \
+  | awk '{print $5}' | head -n1 | tr -d '%'
+)"
+MUTE="$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')"
+
+if [[ "$VOL" -gt "$MAX" ]]; then
+  pactl set-sink-volume @DEFAULT_SINK@ "${MAX}%"
+  VOL="$MAX"
+fi
+
+ICON="󰕾"  
+if [[ "$MUTE" == "yes" ]]; then
+  ICON="󰝟"
+  VOL_DISPLAY=0
+elif [[ "$VOL" -lt 30 ]]; then
+  ICON="󰕿"  
+  VOL_DISPLAY="$VOL"
+elif [[ "$VOL" -lt 70 ]]; then
+  ICON="󰖀"  
+  VOL_DISPLAY="$VOL"
+else
+  VOL_DISPLAY="$VOL"
+fi
+
+notify-send -a osd "" "<span font_desc='JetBrains Mono Nerd Font 20'>${ICON}</span>" \
+  -h "int:value:${VOL_DISPLAY}" \
+  -h "string:x-canonical-private-synchronous:osd" \
+  -h "string:category:osd.volume" \
+  -h "int:transient:1"
+

@@ -1,0 +1,17 @@
+{
+  "pulseaudio": {
+    "format": "<span rise='2000' size='12000'>{icon} </span>",
+    "format-muted": "<span rise='1000'></span>",
+    "format-source": "{volume}% ",
+    "format-source-muted": "MUTE",
+    "format-icons": {
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "default": ["󰕿","󰖀",""] 
+    },
+    "on-click": "pavucontrol"
+  }
+}
+
