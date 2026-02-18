@@ -1,4 +1,4 @@
-#custom-firefox,
+#custom-browser,
 #custom-fileman,
 #custom-terminal,
 #custom-discord, 
@@ -23,9 +23,9 @@
    border-bottom: 2px solid #1793d1;
 }
 
-#custom-firefox {
-  color: #fa881e;
-  padding-left: 8px;
+#custom-browser {
+  color: #ff6536;
+  padding-left: 6px;
   background-color: @trayc;
 }
 
@@ -43,8 +43,8 @@
   color: #1efaed;
   background-color: @trayc;
   padding-right: 18px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding-left: 0px
 }
 
@@ -55,27 +55,25 @@
 }
 
 
-/* Spacer / endcaps */
 #custom-spacer { 
-  padding-left: 10px; 
+  padding-left: 8px; 
 }
 
 #custom-leftend {
   padding-left: 2px;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 #custom-rightend {
   padding-left: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
-/* Idle inhibitor */
 #idle_inhibitor {
   padding-top: 0px;
-  color: #ffffff;
+  color: rgba(255,255,255,0.55);
 }
 
 #idle_inhibitor.activated {
@@ -87,35 +85,4 @@
   border-bottom: 2px solid @vpn_fg;
 }
 
-#custom-bluetooth.off {
-  font-size: 17px;
-  color: @bt_off;
-  border-bottom: 2px solid @bt_off;
-  padding: 0 2px;
-  margin: 0;
-  padding-top: 5px;
-  padding-left: 0px;
-
-}
-
-#custom-bluetooth.on {
-  font-size: 17px;
-  color: @bt_on;
-  border-bottom: 2px solid @bt_on;
-  padding: 0 2px;
-  margin: 0;
-  padding-top: 5px;
-  padding-left: 0px;
-
-}
-
-#custom-bluetooth.connected {
-  font-size: 17px;
-  color: @bt_connected;
-  border-bottom: 2px solid @bt_connected;
-  padding: 0 2px;
-  margin: 0;
-  padding-top: 5px;
-
-}
 

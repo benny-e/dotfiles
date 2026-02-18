@@ -1,9 +1,0 @@
-{
-   "custom/bluetooth": {
-     "exec": "~/.config/scripts/bluetoothstatus.sh",
-     "return-type": "json",
-     "interval": 3,
-     "on-click": "~/.config/scripts/bluetooth.sh",
-     "tooltip": false
-     }
-}

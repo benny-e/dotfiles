@@ -2,11 +2,12 @@
 @define-color fg_muted       #9AA0AA;
 @define-color bg_main        #0E0F14;
 @define-color bg_alt         #151720;
-@define-color window_main    rgba(43, 48, 59, 0.6);
+@define-color warn_fg        #FF9F00;
+@define-color crit_fg        #FF2A1A;
+@define-color window_main    rgba(33, 38, 49, 0.3);
 @define-color tooltips_bg    rgba(24, 24, 24, 0.92);
-@define-color workspaces_bg  rgba(35, 35, 35, 0.8);
-@define-color trayc rgba(35, 35, 35, 0.8);
-
+@define-color workspaces_bg  rgba(45, 45, 45, 0.3);
+@define-color trayc rgba(45, 45, 45, 0.3);
 /* Wi-Fi / Network */
 @define-color net_fg  #00e5ff; 
 
@@ -15,6 +16,7 @@
 
 /* Volume */
 @define-color vol_fg #ffe066;
+@define-color vol_fg_muted #e03a3a;
 
 /* Backlight / Brightness */
 @define-color backlight_fg   #7c86ff; 
@@ -30,8 +32,6 @@
 
 /* Temperature */
 @define-color temp_cool #4da6ff;
-@define-color warn_fg  #FF9F00;
-@define-color crit_fg  #FF2A1A;
 
 
 /* Battery */

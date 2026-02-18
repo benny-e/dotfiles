@@ -12,14 +12,14 @@
 #cpu,
 #clock,
 #idle_inhibitor,
+#bluetooth,
 #custom-vpn,
 #custom-logout,
 #custom-spacer,
 #custom-spacer,
 #custom-clipboard,
 #custom-rightend,
-#custom-leftend,
-#custom-bluetooth
+#custom-leftend
 {
   margin-top: 0;
   margin-bottom: 0;

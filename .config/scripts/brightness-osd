@@ -12,14 +12,17 @@ CUR="$(brightnessctl get)"
 MAX="$(brightnessctl max)"
 PCT=$(( CUR * 100 / MAX ))
 
+ICONS=( "" "" "" "" "󰖙" )
 
-# Icon by brightness level
-if   (( PCT <= 33 )); then ICON="󰃞"
-elif (( PCT <= 66 )); then ICON="󰃟"
-else                      ICON="󰃠"
-fi
+(( PCT < 0 )) && PCT=0
+(( PCT > 100 )) && PCT=100
 
-BODY="<span font='JetBrains Mono Font 20'>${ICON}</span>"
+INDEX=$(( PCT * 4 / 100 ))
+
+ICON="${ICONS[$INDEX]}"
+
+
+BODY="<span font='JetBrains Mono Nerd Font 20'>${ICON}</span>"
 
 notify-send \
   -a "osd" \
@@ -27,6 +30,7 @@ notify-send \
   -h "int:value:${PCT}" \
   -h "string:x-canonical-private-synchronous:osd" \
   -h "string:category:osd.brightness" \
+  -h "int:transient:1" \
   " " \
   "${BODY}"
 

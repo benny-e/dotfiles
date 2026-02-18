@@ -4,12 +4,12 @@
   "include": [
     "~/.config/waybar/modules/hypr/window.jsonc",
     "~/.config/waybar/modules/custom/arch.jsonc",
-    "~/.config/waybar/modules/custom/firefox.jsonc",
+    "~/.config/waybar/modules/custom/browser.jsonc",
     "~/.config/waybar/modules/custom/fileman.jsonc",
     "~/.config/waybar/modules/custom/terminal.jsonc",
     "~/.config/waybar/modules/custom/virtmanager.jsonc",
     "~/.config/waybar/modules/custom/spacers.jsonc",
-    "~/.config/waybar/modules/custom/bluetooth.jsonc",
+    "~/.config/waybar/modules/bluetooth.jsonc",
     "~/.config/waybar/modules/custom/vpn.jsonc",
     "~/.config/waybar/modules/audio.jsonc",
     "~/.config/waybar/modules/backlight.jsonc",
@@ -28,7 +28,7 @@
   "modules-left": [
     "custom/arch",
     "hyprland/workspaces",
-    "custom/firefox",
+    "custom/browser",
     "custom/fileman",
     "custom/terminal",
     "custom/virtmanager"
@@ -45,7 +45,7 @@
     "custom/spacer",
     "pulseaudio",
     "custom/spacer",
-    "custom/bluetooth",
+    "bluetooth",
     "custom/spacer",
     "custom/vpn",
     "custom/spacer",

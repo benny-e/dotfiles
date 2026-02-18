@@ -46,7 +46,6 @@ default-timeout=4000
 
 [category=osd.volume]
 format=%b
-#text-alignment=center
 border-color=#ffe066
 progress-color=#ffe066
 text-color=#000000
@@ -65,4 +64,8 @@ padding=14
 width=250
 
 
+[urgency=critical]
+background-color=#1f0d0d
+text-color=#ffffff
+border-color=#ff0000
 

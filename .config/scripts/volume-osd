@@ -22,7 +22,7 @@ if [[ "$VOL" -gt "$MAX" ]]; then
   VOL="$MAX"
 fi
 
-ICON="󰕾"  
+ICON=""  
 if [[ "$MUTE" == "yes" ]]; then
   ICON="󰝟"
   VOL_DISPLAY=0
@@ -36,7 +36,7 @@ else
   VOL_DISPLAY="$VOL"
 fi
 
-notify-send -a osd "" "<span font_desc='JetBrains Mono Nerd Font 20'>${ICON}</span>" \
+notify-send -a osd "" "<span font='JetBrains Mono Nerd Font 20'>${ICON}</span>" \
   -h "int:value:${VOL_DISPLAY}" \
   -h "string:x-canonical-private-synchronous:osd" \
   -h "string:category:osd.volume" \
