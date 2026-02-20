@@ -1,3 +1,2 @@
-My hypr+arch configs
-
+Dotfiles
 
