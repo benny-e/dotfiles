@@ -63,7 +63,7 @@ background-color=#18181BEB
 padding=14
 width=250
 
-[app-name=Bluetooth]
+[app-name=blueman]
 background-color=#161d2eeb
 text-color=#e9f0ff
 border-color=#1e6cff
