@@ -41,7 +41,7 @@ color_brightblack = "#7f8ea3"
 color_arch = "#1793d1"
 color_cyan = "#00d2ff"
 color_brightblue = "#5FAFFF"
-color_git = "#9A7BFF"
+color_git = "#00D2FF"
 
 [fill]
 symbol = " "
