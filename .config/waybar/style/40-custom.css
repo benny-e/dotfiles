@@ -1,118 +1,118 @@
 #custom-browser,
 #custom-fileman,
 #custom-terminal,
-#custom-discord, 
+#custom-discord,
 #custom-nvim,
-#custom-virtmanager{
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 18px;
-  margin: 0;
+#custom-virtmanager {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 8px;
+	padding-left: 8px;
+	font-size: 18px;
+	margin: 0;
 }
 
 #custom-browser:hover,
 #custom-fileman:hover,
 #custom-terminal:hover,
-#custom-discord:hover, 
+#custom-discord:hover,
 #custom-nvim:hover,
 #custom-virtmanager:hover {
-   border-radius: 0px;
-   text-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
+	border-radius: 0px;
+	text-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
 }
 
-#custom-kernel { 
-  color: #1793d1;
-  background-color: @trayc;
-  padding-right: 8px;
-  padding-left: 6px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  text-shadow: 0 0 6px rgba(23, 147, 206, 0.5);
+#custom-kernel {
+	color: #1793d1;
+	background-color: @trayc;
+	padding-right: 8px;
+	padding-left: 6px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-shadow: 0 0 6px rgba(23, 147, 206, 0.5);
 }
+
 #custom-kernel:hover {
-  text-shadow: 0 0 6px rgba(3, 127, 186, 0.5);
+	text-shadow: 0 0 6px rgba(3, 127, 186, 0.5);
 }
 
 #custom-arch {
-  color: #1793d1;
-  background-color: @trayc;
-  transition: background-color 600ms ease, box-shadow 160ms ease;
-  transition: border 600ms ease, box-shadow 600ms ease;
+	color: #1793d1;
+	background-color: @trayc;
+	transition: background-color 600ms ease, box-shadow 160ms ease;
+	transition: border 600ms ease, box-shadow 600ms ease;
 }
+
 #custom-arch:hover {
-   background: rgba(0,0,0,0.2);
-   border-radius: 0px;
-   text-shadow: 0 0 6px rgba(23, 147, 186, 0.5);
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+	text-shadow: 0 0 6px rgba(23, 147, 186, 0.5);
+	border-bottom: 2px solid #1793d1;
 }
 
 #custom-browser {
-  color: #ff631c;
-  padding-left: 6px;
-  background-color: @trayc;
+	color: #ff631c;
+	padding-left: 6px;
+	background-color: @trayc;
 }
 
 #custom-fileman {
-  color: #1e83fa;
-  background-color: @trayc;
+	color: #1e83fa;
+	background-color: @trayc;
 }
 
-#custom-nvim{
-  color: #9e9e9e;
-  padding-left: 6px;
-  background-color: @trayc;
+#custom-nvim {
+	color: #9e9e9e;
+	padding-left: 6px;
+	background-color: @trayc;
 }
-
 
 #custom-terminal {
-  color: #39FF14;
-  background-color: @trayc;
+	color: #39FF14;
+	background-color: @trayc;
 }
 
 #custom-virtmanager {
-  color: #1efaed;
-  background-color: @trayc;
-  padding-left: 0px;
-  padding-right: 18px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+	color: #1efaed;
+	background-color: @trayc;
+	padding-left: 0px;
+	padding-right: 18px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 #custom-discord {
-  color: #738ADB;
-  background-color: @trayc;
-  padding-right: 12px;
+	color: #738ADB;
+	background-color: @trayc;
+	padding-right: 12px;
 }
 
 
-#custom-spacer { 
-  padding-left: 8px; 
+#custom-spacer {
+	padding-left: 8px;
 }
 
 #custom-leftend {
-  padding-left: 2px;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+	padding-left: 2px;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
 }
 
 #custom-rightend {
-  padding-left: 2px;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+	padding-left: 2px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 #custom-vpn {
-  color: @vpn_fg;
-  border-bottom: 2px solid @vpn_fg;
+	color: @vpn_fg;
+	border-bottom: 2px solid @vpn_fg;
 }
 
 #custom-nowplaying {
-    background-color: @trayc;
-    color: #7f8796;
-    font-style: italic;
-    padding-right: 2px;
-    padding-left: 3px;
+	background-color: @trayc;
+	color: #7f8796;
+	font-style: italic;
+	padding-right: 2px;
+	padding-left: 3px;
 }
-
-
