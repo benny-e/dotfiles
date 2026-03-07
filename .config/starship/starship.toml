@@ -4,32 +4,32 @@ add_newline = false
 palette = "cyber"
 
 format = """
-[ $username ](fg:green bg:color_teal)\
-[](fg:color_teal bg:color_brightgreen)\
+[ $username ](fg:green bg:color_slateblue)\
+[](fg:color_slateblue bg:color_slate)\
 $directory\
-[](fg:color_brightgreen bg:color_yellow)\
+[](fg:color_slate bg:color_bluegray)\
 $rust\
 $python\
-[](fg:color_yellow bg:color_brightorange)\
+[](fg:color_bluegray bg:color_navy)\
 $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-[](fg:color_brightorange bg:color_blue)\
-[](fg:color_blue)\
+[](fg:color_navy bg:color_darknavy)\
+[](fg:color_darknavy)\
 $cmd_duration\
 $fill\
-[](fg:color_teal)\
-[$time ](fg:#FFD75F bg:color_teal)\
+[](fg:color_slateblue)\
+[$time ](fg:#FFD75F bg:color_slateblue)\
 $line_break\
 $character"""
 
 [palettes.cyber]
-color_teal = "#2a2f3a"
-color_brightgreen = "#303746"
-color_yellow = "#3a4356"
-color_brightorange = "#26324a"
-color_blue = "#1f2633"
+color_slateblue = "#2a2f3a"
+color_slate = "#303746"
+color_bluegray = "#3a4356"
+color_navy = "#26324a"
+color_darknavy = "#1f2633"
 
 color_fg0 = "#e6e6e6"
 color_bg1 = "#121212"
@@ -41,20 +41,21 @@ color_brightblack = "#7f8ea3"
 color_arch = "#1793d1"
 color_cyan = "#00d2ff"
 color_brightblue = "#5FAFFF"
+color_git = "#9A7BFF"
 
 [fill]
 symbol = " "
 
 [username]
 show_always = true
-style_user = "fg:color_green bg:color_teal"
-style_root = "fg:color_red bg:color_teal"
+style_user = "fg:color_green bg:color_slateblue"
+style_root = "fg:color_red bg:color_slateblue"
 format = "$user"
 disabled = false
 
 [directory]
-style = "fg:color_brightblue bg:color_brightgreen"
-read_only_style = "bg:color_brightgreen fg:color_orange"
+style = "fg:color_brightblue bg:color_slate"
+read_only_style = "bg:color_slate fg:color_orange"
 read_only = "󰌾 "
 format = "[ $path ]($style)[$read_only]($read_only_style)"
 truncation_length = 2
@@ -65,42 +66,42 @@ truncation_symbol = "…/"
 disabled = false
 only_attached = true
 symbol = ""
-style = "bg:color_brightorange fg:color_fg0"
+style = "bg:color_navy fg:color_git"
 format = '[ $symbol $branch ]($style)'
 
 [git_commit]
 disabled = false
 tag_disabled = false
 tag_symbol = " 󰓼 "
-style = "bg:color_brightorange fg:color_fg0"
+style = "bg:color_navy fg:color_git"
 format = '[ $hash$tag ]($style)'
 
 [git_state]
 disabled = false
-style = "bold bg:color_brightorange fg:color_brightyellow"
+style = "bold bg:color_navy fg:color_brightyellow"
 format = '[ $state $progress_current/$progress_total ]($style)'
 
 [git_status]
 disabled = false
-style = "bold bg:color_brightorange fg:color_orange"
+style = "bold bg:color_navy fg:color_orange"
 format = '[ $all_status$ahead_behind ]($style)'
 
 [rust]
 disabled = false
 symbol = ""
-style = "bg:color_yellow fg:color_fg0"
+style = "bg:color_bluegray fg:color_fg0"
 format = '[ $symbol ]($style)'
 
 [time]
 disabled = false
 time_format = "%H:%M"
-style = "fg:#FFD75F bg:color_teal"
+style = "fg:#FFD75F bg:color_slateblue"
 format = "[  $time]($style)"
 
 [python]
 disabled = false
 symbol = ""
-style = "bg:color_yellow fg:color_brightyellow"
+style = "bg:color_bluegray fg:color_brightyellow"
 format = '[ $symbol $virtualenv ]($style)'
 
 [cmd_duration]
