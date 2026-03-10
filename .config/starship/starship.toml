@@ -19,7 +19,8 @@ $git_status\
 [](fg:color_darknavy)\
 $cmd_duration\
 $fill\
-[](fg:color_slateblue)\
+[](fg:color_darknavy)\
+[](fg:color_slateblue bg:color_darknavy)\
 [$time ](fg:#FFD75F bg:color_slateblue)\
 $line_break\
 $character"""
