@@ -3,3 +3,7 @@
 node_modules/
 __pycache__/
 *.bak
+.env
+.env.*
+*.key
+*.pem
