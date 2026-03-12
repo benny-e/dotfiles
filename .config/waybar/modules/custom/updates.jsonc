@@ -1,0 +1,7 @@
+{
+	"custom/updates": {
+		"exec": "~/.config/scripts/checkupdates.sh",
+		"return-type": "json",
+		"interval": 3600
+	}
+}

@@ -77,8 +77,8 @@
 	background-color: @trayc;
 	padding-left: 0px;
 	padding-right: 18px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 
 #custom-discord {
@@ -94,14 +94,14 @@
 
 #custom-leftend {
 	padding-left: 2px;
-	border-bottom-left-radius: 4px;
-	border-top-left-radius: 4px;
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
 }
 
 #custom-rightend {
 	padding-left: 2px;
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 #custom-vpn {
@@ -115,4 +115,24 @@
 	font-style: italic;
 	padding-right: 2px;
 	padding-left: 3px;
+}
+
+#custom-updates {
+	padding-left: 12px;
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: -3px;
+}
+
+#custom-updates.low {
+	color: @cpu_fg;
+}
+
+#custom-updates.medium {
+	color: @warn_fg;
+}
+
+#custom-updates.high {
+	color: @crit_fg;
 }
