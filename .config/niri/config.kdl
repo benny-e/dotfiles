@@ -5,7 +5,8 @@
 spawn-at-startup "waybar" 
 spawn-at-startup "mako"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-at-startup "~/.config/niri/scripts/idle.sh" 
+spawn-at-startup "swayidle" "-w"
+spawn-at-startup "swaybg" "-i" "/home/benny/.config/wallpapers/dark.png" "-m" "fill"
 // INPUT DEVICES
 
 input {
@@ -178,6 +179,11 @@ window-rule {
 }
 
 // FLOATING WINDOW RULES
+
+window-rule {
+    match app-id="firefox"
+    opacity 1.0
+}
 
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
