@@ -1,9 +1,9 @@
 {
 	"bluetooth": {
-		"format": "",
+		"format": "<span size = '18000'></span>",
 		"format-connected": "󰂱",
-		"format-off": "󰂲",
-		"format-disabled": "󰂲",
+		"format-off": "<span size = '18000'>󰂲</span>",
+		"format-disabled": "<span size = '18000'>󰂲</span>",
 		"tooltip-format": "{status}",
 		"on-click": "blueman-manager",
 		"tooltip-format-connected": "Bluetooth: {device_alias}"

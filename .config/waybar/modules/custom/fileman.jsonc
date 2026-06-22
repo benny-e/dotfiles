@@ -1,9 +1,8 @@
 {
-  "custom/fileman": {
-    "format": "",
-    "on-click": "thunar",
-    "tooltip": false,
-    "icon-size": 32
-  }
+	"custom/fileman": {
+		"format": "<span size = '18000'></span>",
+		"on-click": "thunar",
+		"tooltip": false,
+		"icon-size": 32
+	}
 }
-

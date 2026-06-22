@@ -1,6 +1,6 @@
 {
 	"custom/browser": {
-		"format": "",
+		"format": "<span size = '18000'></span>",
 		"on-click": "firefox",
 		"tooltip": false,
 		"icon-size": 32

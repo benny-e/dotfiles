@@ -1,9 +1,8 @@
 {
-  "custom/terminal": {
-    "format": " ",
-    "on-click": "kitty",
-    "tooltip": false,
-    "icon-size": 50
-  }
+	"custom/terminal": {
+		"format": "<span size = '18000'></span>",
+		"on-click": "kitty",
+		"tooltip": false,
+		"icon-size": 50
+	}
 }
-

@@ -34,8 +34,8 @@
 #custom-launcher,
 #custom-virtmanager {
 	margin: 0;
-	padding: 4px 9px;
-	font-size: 16px;
+	padding: 4px 8px;
+	font-size: 14px;
 	border-radius: 0;
 	background-color: @trayc;
 	border-bottom: 2px solid #1a1d21;

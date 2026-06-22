@@ -1,9 +1,9 @@
 {
 	"network": {
-		"format-wifi": "<span rise='1300' size='11000'>{icon}</span> {signalStrength}",
-		"format-ethernet": "<span rise ='2000'> </span>",
+		"format-wifi": "<span  size='18000'>{icon}</span>{signalStrength}",
+		"format-ethernet": "<span rise ='18000'> </span>",
 		"format-linked": "{ifname} (No IP)  ",
-		"format-disconnected": "<span rise ='1300' size='12000'>󰤮 </span>",
+		"format-disconnected": "<span size='18000'>󰤮 </span>",
 		"on-click": "~/.config/waybar/scripts/networkmenu.sh",
 		"format-icons": [
 			"󰤯",

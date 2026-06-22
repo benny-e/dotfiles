@@ -4,7 +4,7 @@
 		"interval": 5,
 		"signal": 10,
 		"on-click": "~/.config/waybar/scripts/vpnmenu.sh",
-		"format": "<span rise='1400'> </span>",
+		"format": "<span size='18000'></span>",
 		"tooltip": false
 	}
 }
